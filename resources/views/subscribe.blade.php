@@ -16,6 +16,17 @@
 
             <p>Please enter your details to subscribe to our awesome newsletter!</p>
 
+            @if ($errors->any())
+                <div class="bg-red-600 text-white rounded text-center px-5 py-4 mt-5">
+                    <h2 class="font-black mb-2">Oops, there was a problem!</h2>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <form method="POST" action="/subscribe" class="flex flex-col mt-5">
                 @csrf
 

@@ -12,4 +12,7 @@
 */
 
 Route::get('/', 'SubscribersController@create');
+
 Route::post('/subscribe', 'SubscribersController@store');
+
+Route::get('/verify-sub/{email}', 'SubscribersController@update');
