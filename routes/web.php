@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SubscribersController@create');
+Route::post('/subscribe', 'SubscribersController@store');
