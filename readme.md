@@ -3,10 +3,12 @@
 This repository is for the developer challenge I have been asked to complete by EXIMIA.
 
 ## Requirments
-* Laravel 5.7
+* Install Laravel 5.7
+* Require Guzzle
 * Mailgun API account
 
 ## UX
 
-* As a user I want to register to a newsletter
-* As an admin, I want to view 
+* As a User I want to register to a newsletter
+* As a User I want to verify my e-mail address
+* As an Admin I want to view all registered users
